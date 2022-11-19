@@ -14,12 +14,17 @@ function App() {
     return diceArray;
   }
 
+  function rollDice() {
+    setDice(allNewDice);
+  }
+
   return (
     <div className="App center--content">
-      <main className='center--content'>
+      <main className='center--content main'>
         <div className='die--wrapper'>
           {dice.map(die => <Dice value={die} />)}
         </div>
+        <button className='center--content disable--select' onClick={rollDice}>Roll</button>
       </main>
     </div>
   );
