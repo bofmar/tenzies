@@ -1,0 +1,21 @@
+:root {
+  --background-dark: #0B2434;
+  --background-light: #F5F5F5;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: var(--background-light);
+  width: 30%;
+  min-width: 300px;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+}
