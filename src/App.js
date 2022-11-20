@@ -34,6 +34,8 @@ function App() {
   return (
     <div className="App center--content">
       <main className='center--content main'>
+        <h1 className="title">Tenzies</h1>
+        <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
         <div className='die--wrapper'>
           {dice.map(die => <Dice value={die.value} isHeld={die.isHeld} hold={() => hold(die.id)} key={die.id} />)}
         </div>
