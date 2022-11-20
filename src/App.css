@@ -57,6 +57,10 @@
   cursor: pointer;
 }
 
+.held {
+  background-color: var(--green);
+}
+
 button {
   all: initial;
 
