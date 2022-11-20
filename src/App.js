@@ -36,7 +36,7 @@ function App() {
   }
 
   function rollDice() {
-    setDice(prevDice => prevDice.map(die => die.isHeld ? die : getNewDie()));
+    setDice(prevDice => prevDice.map(die => tenzies ? getNewDie() : die.isHeld ? die : getNewDie()));
   }
 
   function hold(id) {
